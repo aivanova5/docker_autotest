@@ -2,7 +2,8 @@ FROM centos:7
 
 ENV container docker
 ENV REPO=https://github.com/aivanova5/docker_autotest
-RUN sh "echo ${env.GIT_BRANCH}"
+ARG git_branch
+RUN echo "Building $git_branch "
 
 VOLUME [ "/sys/fs/cgroup" ]
 WORKDIR /tmp
