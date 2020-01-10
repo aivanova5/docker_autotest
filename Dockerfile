@@ -7,5 +7,4 @@ RUN echo "Building $git_branch "
 
 VOLUME [ "/sys/fs/cgroup" ]
 WORKDIR /tmp
-RUN chmod +wx *.sh
 EXPOSE 6266-6299/tcp

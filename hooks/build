@@ -1,0 +1,1 @@
+docker build --build-arg git_branch=$SOURCE_BRANCH .
